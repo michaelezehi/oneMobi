@@ -56,15 +56,14 @@
                         <a href="visits.html"><i class="fa fa-suitcase fa-2x"></i> <span class="nav-label">Visits</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-search fa-2x"></i> <span class="nav-label">Search</span></a>
+                        <a href="search.html"><i class="fa fa-search fa-2x"></i> <span class="nav-label">Search</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-file-text fa-2x"></i> <span class="nav-label">Forms</span></a>
+                        <a href="forms.html"><i class="fa fa-file-text fa-2x"></i> <span class="nav-label">Forms</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-trash fa-2x"></i> <span class="nav-label">trash</span></a>
+                        <a href="trash.html"><i class="fa fa-trash fa-2x"></i> <span class="nav-label">trash</span></a>
                     </li>
-
                 </ul>
 
             </div>
@@ -136,270 +135,242 @@
                 </nav>
             </div>
             <div class="row  border-bottom white-bg dashboard-header" style="margin-bottom: 30px;">
-                <div class="col-lg-12">
-                    <h2>MOT repair form</h2>
-                    <div class="bs-example" data-example-id="simple-nav-justified">
-                        <ul class="nav nav-tabs">
-                            <li role="presentation">
-                                <a href="#repair">Repair</a>
-                            </li>
-                            <li role="presentation" class="active">
-                                <a href="#repairDetails">Repair details</a>
-                            </li>
-                        </ul>
-                        <div class="ibox float-e-margins" id="repair" hidden="">
-                            <div class="ibox-title">
-                                <small>Repairs information for this MOT</small>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <form method="get" class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label">Asbestos check required?</label>
-                                        <div class="col-sm-8">
-                                            <div class="switch">
-                                                <div class="onoffswitch">
-                                                    <input type="checkbox" class="onoffswitch-checkbox" id="asbestosCheck">
-                                                    <label class="onoffswitch-label" for="asbestosCheck">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label">Electrical check required?</label>
-                                        <div class="col-sm-8">
-                                            <div class="switch">
-                                                <div class="onoffswitch">
-                                                    <input type="checkbox" class="onoffswitch-checkbox" id="electricalCheck">
-                                                    <label class="onoffswitch-label" for="electricalCheck">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label">MOT or Void</label>
-                                        <div class="col-sm-8">
-                                            <div class="switch">
-                                                <div class="onoffswitch">
-                                                    <input type="checkbox" class="onoffswitch-checkbox" id="motCheck">
-                                                    <label class="onoffswitch-label" for="motCheck">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label">General comments</label>
-                                        <div class="col-sm-8">
-                                            <textarea class="note-codable" rows="5" style="width: 100%"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label">Include repairs?</label>
-                                        <div class="col-sm-8">
-                                            <div class="switch">
-                                                <div class="onoffswitch">
-                                                    <input type="checkbox" class="onoffswitch-checkbox" id="includeRepairs">
-                                                    <label class="onoffswitch-label" for="includeRepairs">
-                                                        <span class="onoffswitch-inner"></span>
-                                                        <span class="onoffswitch-switch"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-
-                        <!--Repairs details section-->
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!--Repair details Form1-->
-                                <div class="ibox float-e-margins" id="repairDetails">
-                                    <div class="ibox-title">
-                                        <h3>Form 1</h3>
-                                        <div class="ibox-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <form method="get" class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Trade</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a trade</option>
-                                                            <option value="GroundWork">Ground Work</option>
-                                                            <option value="GroundWork">Fencing</option>
-                                                            <option value="GroundWork">Plumping</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Section</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a section</option>
-                                                            <option value="GroundWork">One</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Sub-section</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a section</option>
-                                                            <option value="GroundWork">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Description</label>
-                                                <div class="col-sm-8">
-                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                        </form>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <!--Repair details Form2-->
-                                <div class="ibox float-e-margins" id="repairDetails2">
-                                    <div class="ibox-title">
-                                        <h3>Form 2</h3>
-                                        <div class="ibox-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <form method="get" class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Trade</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a trade</option>
-                                                            <option value="GroundWork">Ground Work</option>
-                                                            <option value="GroundWork">Fencing</option>
-                                                            <option value="GroundWork">Plumping</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Section</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a section</option>
-                                                            <option value="GroundWork">One</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Sub-section</label>
-                                                <div class="col-sm-8">
-                                                    <div class="input-group">
-                                                        <select class="chosen-select">
-                                                            <option value="">Select a section</option>
-                                                            <option value="GroundWork">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-
-
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Description</label>
-                                                <div class="col-sm-8">
-                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="hr-line-dashed"></div>
-                                        </form>
-                                        <span class="pull-right"><button class="btn btn-primary btn-outline btn-rounded"><i class="fa fa-plus"></i> Add new</button></span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="tabs-container">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> Repair</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false"> Repair details</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false"> Additional repairs</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane active">
                                     <div class="panel-body">
-                                        <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing</strong>
+                                        <div class="ibox float-e-margins" id="repair">
+                                            <div class="ibox-title">
+                                                <h2>Repairs Details</h2>
+                                                <div class="ibox-tools">
+                                                    <a class="collapse-link">
+                                                        <i class="fa fa-chevron-up"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <form method="get" class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Asbestos check required?</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="switch">
+                                                                <div class="onoffswitch">
+                                                                    <input type="checkbox" class="onoffswitch-checkbox" id="asbestosCheck">
+                                                                    <label class="onoffswitch-label" for="asbestosCheck">
+                                                                        <span class="onoffswitch-inner"></span>
+                                                                        <span class="onoffswitch-switch"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Electrical check required?</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="switch">
+                                                                <div class="onoffswitch">
+                                                                    <input type="checkbox" class="onoffswitch-checkbox" id="electricalCheck">
+                                                                    <label class="onoffswitch-label" for="electricalCheck">
+                                                                        <span class="onoffswitch-inner"></span>
+                                                                        <span class="onoffswitch-switch"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">MOT or Void</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="switch">
+                                                                <div class="onoffswitch">
+                                                                    <input type="checkbox" class="onoffswitch-checkbox" id="motCheck">
+                                                                    <label class="onoffswitch-label" for="motCheck">
+                                                                        <span class="onoffswitch-inner"></span>
+                                                                        <span class="onoffswitch-switch"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">General comments</label>
+                                                        <div class="col-sm-8">
+                                                            <textarea class="note-codable" rows="5" style="width: 100%"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-line-dashed"></div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Include repairs?</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="switch">
+                                                                <div class="onoffswitch">
+                                                                    <input type="checkbox" class="onoffswitch-checkbox" id="includeRepairs">
+                                                                    <label class="onoffswitch-label" for="includeRepairs">
+                                                                        <span class="onoffswitch-inner"></span>
+                                                                        <span class="onoffswitch-switch"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                        <p>
-                                            A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
-                                            existence in this spot, which was created for the bliss of souls like mine.
-                                        </p>
-
-                                        <p>
-                                            I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at
-                                            the present moment; and yet I feel that I never was a greater artist than now. When.
-                                        </p>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div id="tab-2" class="tab-pane">
                                     <div class="panel-body">
-                                      
+                                        <!--Repairs details section-->
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <!--Repair details Form1-->
+                                                <div class="ibox float-e-margins" id="repairDetails">
+                                                    <div class="ibox-title">
+                                                        <h3>Form 1</h3>
+                                                        <div class="ibox-tools">
+                                                            <a class="collapse-link">
+                                                                <i class="fa fa-chevron-up"></i>
+                                                            </a>
+                                                            <a class="close-link">
+                                                                <i class="fa fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ibox-content">
+                                                        <form method="get" class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Trade</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a trade</option>
+                                                                            <option value="GroundWork">Ground Work</option>
+                                                                            <option value="GroundWork">Fencing</option>
+                                                                            <option value="GroundWork">Plumping</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Section</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a section</option>
+                                                                            <option value="GroundWork">One</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Sub-section</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a section</option>
+                                                                            <option value="GroundWork">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Description</label>
+                                                                <div class="col-sm-8">
+                                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <!--Repair details Form2-->
+                                                <div class="ibox float-e-margins" id="repairDetails2">
+                                                    <div class="ibox-title">
+                                                        <h3>Form 2</h3>
+                                                        <div class="ibox-tools">
+                                                            <a class="collapse-link">
+                                                                <i class="fa fa-chevron-up"></i>
+                                                            </a>
+                                                            <a class="close-link">
+                                                                <i class="fa fa-times"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ibox-content">
+                                                        <form method="get" class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Trade</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a trade</option>
+                                                                            <option value="GroundWork">Ground Work</option>
+                                                                            <option value="GroundWork">Fencing</option>
+                                                                            <option value="GroundWork">Plumping</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Section</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a section</option>
+                                                                            <option value="GroundWork">One</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Sub-section</label>
+                                                                <div class="col-sm-8">
+                                                                    <div class="input-group">
+                                                                        <select class="chosen-select">
+                                                                            <option value="">Select a section</option>
+                                                                            <option value="GroundWork">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+
+
+                                                            <div class="form-group">
+                                                                <label class="col-sm-4 control-label">Description</label>
+                                                                <div class="col-sm-8">
+                                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hr-line-dashed"></div>
+                                                        </form>
+                                                        <span class="pull-right"><button class="btn btn-primary btn-outline btn-rounded"><i class="fa fa-plus"></i> Add new</button></span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -415,9 +386,9 @@
                     <strong>Onemobile </strong>v.2.0
                 </div>
                 <div>
-                    <button class="btn btn-danger btn-rounded btn-outline">Discard</button>
-                    <button class="btn btn-primary btn-rounded btn-outline">Save and continue</button>
-                    <button class="btn btn-primary btn-rounded">Save and finish</button>
+                    <a href="visit.html" class="btn btn-danger btn-rounded btn-outline">Discard</a>
+                    <a href="visit.html" class="btn btn-primary btn-rounded btn-outline">Save and continue</a>
+                    <a href="visit.html" class="btn btn-primary btn-rounded">Save and finish</a>
                 </div>
             </div>
         </div>
