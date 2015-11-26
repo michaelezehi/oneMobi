@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Riverside | Dashboard</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" style="position: fixed;" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                            </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Chris Usher</strong>
+                                    </span> <span class="text-muted text-xs block">IT Manager <b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            <img alt="image" class="img-responsive center-block" src="img/onemobile-logo-alpha-sm.png" style="width:50px; height: 50px;" />
+                        </div>
+                    </li>
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-th-large fa-2x"></i> <span class="nav-label">Dashboards</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="visits.html"><i class="fa fa-suitcase fa-2x"></i> <span class="nav-label">Visits</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-search fa-2x"></i> <span class="nav-label">Search</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-file-text fa-2x"></i> <span class="nav-label">Forms</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-trash fa-2x"></i> <span class="nav-label">trash</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to Riverside Onemobile.</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-suitcase"></i>  <span class="label label-warning">3</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <i class="fa fa-home fa-2x"></i>
+                                        </a>
+                                        <div class="media-body">
+                                            <strong>12 Liverpool street</strong> due tomorrow <br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <i class="fa fa-home fa-2x"></i>
+                                        </a>
+                                        <div class="media-body">
+                                            <strong>34 Altom street</strong> due Friday <br>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <i class="fa fa-home fa-2x"></i>
+                                        </a>
+                                        <div class="media-body">
+                                            <strong>12 Main street</strong> due Friday <br>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row  border-bottom white-bg dashboard-header" style="margin-bottom: 30px;">
+                <div class="col-lg-12">
+                    <h2>MOT repair form</h2>
+                    <div class="bs-example" data-example-id="simple-nav-justified">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation">
+                                <a href="#repair">Repair</a>
+                            </li>
+                            <li role="presentation" class="active">
+                                <a href="#repairDetails">Repair details</a>
+                            </li>
+                        </ul>
+                        <div class="ibox float-e-margins" id="repair" hidden="">
+                            <div class="ibox-title">
+                                <small>Repairs information for this MOT</small>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="get" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">Asbestos check required?</label>
+                                        <div class="col-sm-8">
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="asbestosCheck">
+                                                    <label class="onoffswitch-label" for="asbestosCheck">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">Electrical check required?</label>
+                                        <div class="col-sm-8">
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="electricalCheck">
+                                                    <label class="onoffswitch-label" for="electricalCheck">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">MOT or Void</label>
+                                        <div class="col-sm-8">
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="motCheck">
+                                                    <label class="onoffswitch-label" for="motCheck">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">General comments</label>
+                                        <div class="col-sm-8">
+                                            <textarea class="note-codable" rows="5" style="width: 100%"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label">Include repairs?</label>
+                                        <div class="col-sm-8">
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    <input type="checkbox" class="onoffswitch-checkbox" id="includeRepairs">
+                                                    <label class="onoffswitch-label" for="includeRepairs">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--Repairs details section-->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!--Repair details Form1-->
+                                <div class="ibox float-e-margins" id="repairDetails">
+                                    <div class="ibox-title">
+                                        <h3>Form 1</h3>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="close-link">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Trade</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a trade</option>
+                                                            <option value="GroundWork">Ground Work</option>
+                                                            <option value="GroundWork">Fencing</option>
+                                                            <option value="GroundWork">Plumping</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Section</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a section</option>
+                                                            <option value="GroundWork">One</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Sub-section</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a section</option>
+                                                            <option value="GroundWork">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Description</label>
+                                                <div class="col-sm-8">
+                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!--Repair details Form2-->
+                                <div class="ibox float-e-margins" id="repairDetails2">
+                                    <div class="ibox-title">
+                                        <h3>Form 2</h3>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="close-link">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Trade</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a trade</option>
+                                                            <option value="GroundWork">Ground Work</option>
+                                                            <option value="GroundWork">Fencing</option>
+                                                            <option value="GroundWork">Plumping</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Section</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a section</option>
+                                                            <option value="GroundWork">One</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Sub-section</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="chosen-select">
+                                                            <option value="">Select a section</option>
+                                                            <option value="GroundWork">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Description</label>
+                                                <div class="col-sm-8">
+                                                    <textarea class="note-codable" rows="2" style="width: 100%"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="hr-line-dashed"></div>
+                                        </form>
+                                        <span class="pull-right"><button class="btn btn-primary btn-outline btn-rounded"><i class="fa fa-plus"></i> Add new</button></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footer fixed">
+                <div class="pull-right">
+                    <strong>Onemobile </strong>v.2.0
+                </div>
+                <div>
+                    <button class="btn btn-danger btn-rounded btn-outline">Discard</button>
+                    <button class="btn btn-primary btn-rounded btn-outline">Save and continue</button>
+                    <button class="btn btn-primary btn-rounded">Save and finish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 4000
+                };
+                //  toastr.success('Onemobile', 'Welcome to Riverside');
+
+            }, 1300);
+
+
+            var data1 = [
+                [0, 4], [1, 8], [2, 5], [3, 10], [4, 4], [5, 16], [6, 5], [7, 11], [8, 6], [9, 11], [10, 30], [11, 10], [12, 13], [13, 4], [14, 3], [15, 3], [16, 6]
+            ];
+            var data2 = [
+                [0, 1], [1, 0], [2, 2], [3, 0], [4, 1], [5, 3], [6, 1], [7, 5], [8, 2], [9, 3], [10, 2], [11, 1], [12, 0], [13, 2], [14, 8], [15, 0], [16, 0]
+            ];
+            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                data1, data2
+            ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 0,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            tickColor: "#d5d5d5",
+                            borderWidth: 1,
+                            color: '#d5d5d5'
+                        },
+                        colors: ["#1ab394", "#1C84C6"],
+                        xaxis: {
+                        },
+                        yaxis: {
+                            ticks: 4
+                        },
+                        tooltip: false
+                    }
+            );
+
+
+        });
+    </script>
+</body>
+</html>
